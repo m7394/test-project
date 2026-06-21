@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet" href="style.css">
+
+<title>記帳網站</title>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>記帳網站</h1>
+
+<h2 id="balance">目前餘額：0</h2>
+
+<input
+id="description"
+placeholder="項目名稱">
+
+<input
+id="amount"
+type="number"
+placeholder="金額">
+
+<select id="type">
+
+<option value="income">
+收入
+</option>
+
+<option value="expense">
+支出
+</option>
+
+</select>
+
+<button onclick="addRecord()">
+新增
+</button>
+
+<ul id="records"></ul>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
